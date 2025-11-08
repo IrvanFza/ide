@@ -1,7 +1,7 @@
 import { usePuter } from "./puter.js";
 import configuration from "./configuration.js";
 
-const API_KEY = ""; // Get yours at https://platform.sulu.sh/apis/judge0
+const API_KEY = "";
 
 const AUTH_HEADERS = API_KEY ? {
     "Authorization": `Bearer ${API_KEY}`
@@ -10,8 +10,8 @@ const AUTH_HEADERS = API_KEY ? {
 const CE = "CE";
 const EXTRA_CE = "EXTRA_CE";
 
-const AUTHENTICATED_CE_BASE_URL = "https://judge0-ce.p.sulu.sh";
-const AUTHENTICATED_EXTRA_CE_BASE_URL = "https://judge0-extra-ce.p.sulu.sh";
+const AUTHENTICATED_CE_BASE_URL = "https://ce.judge0.com";
+const AUTHENTICATED_EXTRA_CE_BASE_URL = "https://extra-ce.judge0.com";
 
 var AUTHENTICATED_BASE_URL = {};
 AUTHENTICATED_BASE_URL[CE] = AUTHENTICATED_CE_BASE_URL;
